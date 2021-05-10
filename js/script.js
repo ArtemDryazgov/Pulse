@@ -1,4 +1,4 @@
-/* Скрипт слайдера */
+//Скрипт слайдера
 
 $(document).ready(function () {
 	$('.carousel__inner').slick({
@@ -18,6 +18,8 @@ $(document).ready(function () {
 			}
 		]
 	});
+
+	// Табы
 
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
 		$(this)
@@ -40,4 +42,23 @@ $(document).ready(function () {
 			$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
 		})
 	})
+
+	// Модальные окна
+
+	$('[data-modal=consultation]').on('click', function () {
+		$('.overlay, #consultation').fadeIn('slow');
+	});
+	$('.modal__close').on('click', function () {
+		$('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+	});
+
+
+	$('.button_catalog').each(function (i) {
+		$(this).on('click', function () {
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
+		});
+	});
 });
+
+
