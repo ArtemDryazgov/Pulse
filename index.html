@@ -25,7 +25,7 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section class="promo" id="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -111,7 +111,7 @@
 
 			<form action="#" class="feed-form" id="consultation-form">
 				<input name="name" required placeholder="Ваше имя" type="text">
-				<input name="phone" required placeholder="Ваш телефон" type="number">
+				<input name="phone" required placeholder="Ваш телефон">
 				<input name="email" required placeholder="Ваш E-mail" type="email">
 
 				<button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
@@ -478,7 +478,7 @@
 			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 			<form action="#" class="feed-form feed-form_mt-25">
 				<input name="name" placeholder="Ваше имя" type="text">
-				<input name="phone" placeholder="Ваш телефон" type="number">
+				<input name="phone" placeholder="Ваш телефон">
 				<input name="email" placeholder="Ваш E-mail" type="email">
 
 				<button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
@@ -491,7 +491,7 @@
 			<div class="modal__descr">Пульсометр Polar FT1</div>
 			<form action="#" class="feed-form feed-form_mt-25">
 				<input name="name" required placeholder="Ваше имя" type="text">
-				<input name="phone" required placeholder="Ваш телефон" type="number">
+				<input name="phone" required placeholder="Ваш телефон">
 				<input name="email" required placeholder="Ваш E-mail" type="email">
 
 				<button class="button button_submit">Купить</button>
@@ -503,19 +503,25 @@
 			<div class="modal__title">Спасибо за вашу заявку!</div>
 			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
+	</div>
 
+	<a href="#promo" class="pageup">
+		<img src="icons/up-arrow.svg" alt="up">
+	</a>
 
-		<!-- Slider JavaScript -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
+	<!-- Slider JavaScript -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 
-		<!-- Validate -->
-		<script src="js/jquery.validate.min.js"></script>
+	<!-- Validate -->
+	<script src="js/jquery.validate.min.js"></script>
 
+	<!-- Mask input -->
+	<script src="js/jquery.maskedinput.min.js"></script>
 
-		<!-- Optional JavaScript -->
-		<script src=" js/script.js"></script>
+	<!-- Optional JavaScript -->
+	<script src=" js/script.js"></script>
 </body>
 
 </html>
